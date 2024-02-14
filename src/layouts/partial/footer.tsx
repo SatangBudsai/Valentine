@@ -8,12 +8,12 @@ type Props = {}
 const Footer = (props: Props) => {
     return (
         <div className='flex justify-between px-5 py-8'>
-            <div className='flex gap-1 items-center'>
+            <div className='flex gap-1 items-center text-sm'>
                 Copyright
-                <Icon icon="tdesign:copyright" className='text-lg' />
+                <Icon icon="tdesign:copyright" className='text-base' />
                 2024 | VALENTINE
             </div>
-            <div>
+            <div className='text-sm'>
                 Dev by SATANG
             </div>
         </div>
