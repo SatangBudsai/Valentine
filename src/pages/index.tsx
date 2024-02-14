@@ -22,7 +22,7 @@ const Home = (props: Props) => {
   const addScale = () => {
     setScaleWidth(scaleWidth * 1.3)
     setScaleHeight(scaleHeight * 1.3)
-    setScaleText(scaleText * 1.4)
+    setScaleText(scaleText * 1.35)
   }
 
   useEffect(() => {
@@ -40,13 +40,11 @@ const Home = (props: Props) => {
     setTimeout(() => {
       setAniText(
         <Fragment>
-          <div className='flex gap-2 items-center mt-10 mb-5'>
-            <h1 className='text-xl font-medium'>I LOVE YOU PIMPHIMON</h1>
+          <div className='flex gap-2 items-center mt-5 mb-2'>
+            <h1 className='text-xl font-medium'>I LOVE YOU</h1>
             <Icon icon="bi:heart-fill" className='text-danger text-2xl' />
           </div>
-          <audio controls className=''>
-            <source src="sound/me.mp3" type="audio/mp3" />
-          </audio>
+          <h2 className='font-medium'>HAPPY VALENTINE'S DAY</h2>
         </Fragment>
       )
     }, 3000);
@@ -56,7 +54,11 @@ const Home = (props: Props) => {
     <Fragment>
       {!isYes ?
         <Container className='items-center my-10 overflow-hidden'>
-          <Image width={300} src="images/jump-bear.gif" />
+          <Image width={150} src="images/me.gif" />
+          <audio autoPlay controls loop id="playAudio" className='mt-5'>
+            <source src="sound/me-01.mp3" type="audio/mp3" />
+          </audio>
+
           <h1 className='text-xl font-medium my-10'>WILL YOU BE MY VALENTINE?</h1>
           <div className='flex justify-center gap-4'>
             <Button
@@ -87,7 +89,9 @@ const Home = (props: Props) => {
           </div>
         </Container> :
         <Container className='items-center my-10 overflow-hidden'>
-          <Image width={300} src="images/bear-kiss-bear-kisses.gif" />
+          <video autoPlay loop playsInline className='h-80 rounded-lg' id='2'>
+            <source src="video/valentine.mp4" type="video/mp4" />
+          </video>
           {aniText}
         </Container>}
     </Fragment>

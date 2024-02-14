@@ -14,7 +14,7 @@ const Footer = (props: Props) => {
                 2024 | VALENTINE
             </div>
             <div className='text-sm'>
-                Dev by SATANG
+                BY SATANG
             </div>
         </div>
     )
