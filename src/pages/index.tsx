@@ -40,7 +40,7 @@ const Home = (props: Props) => {
         setAniText(
           <Fragment>
             <div className='flex gap-2 items-center'>
-              <h1 className='text-xl font-medium my-10'>I LOVE YOU </h1>
+              <h1 className='text-xl font-medium my-10'>I LOVE YOU PIMPHIMON</h1>
               <Icon icon="bi:heart-fill" className='text-danger text-2xl' />
             </div>
           </Fragment>
