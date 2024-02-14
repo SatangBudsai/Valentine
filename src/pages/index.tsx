@@ -40,10 +40,13 @@ const Home = (props: Props) => {
     setTimeout(() => {
       setAniText(
         <Fragment>
-          <div className='flex gap-2 items-center'>
-            <h1 className='text-xl font-medium my-10'>I LOVE YOU PIMPHIMON</h1>
+          <div className='flex gap-2 items-center mt-10 mb-5'>
+            <h1 className='text-xl font-medium'>I LOVE YOU PIMPHIMON</h1>
             <Icon icon="bi:heart-fill" className='text-danger text-2xl' />
           </div>
+          <audio controls className=''>
+            <source src="sound/me.mp3" type="audio/mp3" />
+          </audio>
         </Fragment>
       )
     }, 3000);
