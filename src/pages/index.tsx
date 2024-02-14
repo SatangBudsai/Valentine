@@ -36,18 +36,17 @@ const Home = (props: Props) => {
       setAniText(
         <h1 className='text-xl font-medium my-10'>AND</h1>
       )
-      setTimeout(() => {
-        setAniText(
-          <Fragment>
-            <div className='flex gap-2 items-center'>
-              <h1 className='text-xl font-medium my-10'>I LOVE YOU PIMPHIMON</h1>
-              <Icon icon="bi:heart-fill" className='text-danger text-2xl' />
-            </div>
-          </Fragment>
-        )
-      }, 1000);
-    }, 1000);
-
+    }, 1500);
+    setTimeout(() => {
+      setAniText(
+        <Fragment>
+          <div className='flex gap-2 items-center'>
+            <h1 className='text-xl font-medium my-10'>I LOVE YOU PIMPHIMON</h1>
+            <Icon icon="bi:heart-fill" className='text-danger text-2xl' />
+          </div>
+        </Fragment>
+      )
+    }, 3000);
   }
 
   return (
