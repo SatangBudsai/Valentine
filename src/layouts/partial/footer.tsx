@@ -14,7 +14,7 @@ const Footer = (props: Props) => {
                 2023 | VALENTINE
             </div>
             <div>
-                Developer by SATANG BUDSAI
+                Dev by SATANG BUDSAI
             </div>
         </div>
     )
