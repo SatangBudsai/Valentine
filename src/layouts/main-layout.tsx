@@ -16,10 +16,8 @@ const MainLayout = (props: Props) => {
     return (
         <Fragment>
             <div className='flex flex-row min-h-[100dvh] max-w-screen'>
-                <Sidebar />
-                <div className="w-full lg:w-[calc(100vw-16rem)]">
+                <div className="w-full">
                     <div className='flex flex-col min-h-[100dvh]'>
-                        <Navbar breadcrumb={breadcrumb} />
                         <div className="flex-grow">
                             <div className="px-6 pb-6 max-md:px-5 max-md:pb-5">
                                 {props.children}

@@ -96,7 +96,9 @@ Home.getLayout = (page: ReactElement) => {
   return (
     <Fragment>
       <RootLayout>
-        {page}
+        <MainLayout>
+          {page}
+        </MainLayout>
       </RootLayout>
     </Fragment>
   );
