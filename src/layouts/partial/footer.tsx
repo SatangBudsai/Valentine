@@ -11,10 +11,10 @@ const Footer = (props: Props) => {
             <div className='flex gap-1 items-center'>
                 Copyright
                 <Icon icon="tdesign:copyright" className='text-lg' />
-                2023 | VALENTINE
+                2024 | VALENTINE
             </div>
             <div>
-                Dev by SATANG BUDSAI
+                Dev by SATANG
             </div>
         </div>
     )
