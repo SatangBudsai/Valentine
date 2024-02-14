@@ -44,7 +44,7 @@ const Home = (props: Props) => {
             <h1 className='text-xl font-medium'>I LOVE YOU</h1>
             <Icon icon="bi:heart-fill" className='text-danger text-2xl' />
           </div>
-          <h2 className='font-medium'>HAPPY VALENTINE'S DAY</h2>
+          <h2 className='font-medium'>{`HAPPY VALENTINE'S DAY`}</h2>
         </Fragment>
       )
     }, 3000);
